@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
 
   # Forward ports for MySQL, MongoDB, and PostgreSQL
-  config.vm.network "forwarded_port", guest: 3306, host: 9010  # MySQL
+  config.vm.network "forwarded_port", guest: 3306, host: 3306  # MySQL
   config.vm.network "forwarded_port", guest: 27017, host: 27017 # MongoDB
   config.vm.network "forwarded_port", guest: 5432, host: 5432  # PostgreSQL
 
